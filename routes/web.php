@@ -19,6 +19,4 @@ $app->get('/prueba', function() use($app){
 	return "Hola mundo";
 });
 
-$app->get('/data', ['middleware' => 'cors', function(){
-	return "JEJE IZZI";
-}]);
+$app->get('/data', 'GitController@index');

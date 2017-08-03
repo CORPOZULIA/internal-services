@@ -1,9 +1,8 @@
-<?php
+<?php  
 
-namespace App\Http\Controllers\Modules;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 class GitController extends Controller
 {
     /**
@@ -17,6 +16,6 @@ class GitController extends Controller
     }
 
     public function index(Request $req){
-        return $req;
+        return $req->ip();
     }
 }
