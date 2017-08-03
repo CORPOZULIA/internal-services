@@ -14,3 +14,11 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+$app->get('/prueba', function() use($app){
+	return "Hola mundo";
+});
+
+$app->get('/data', ['middleware' => 'cors', function(){
+	return "JEJE IZZI";
+}]);
